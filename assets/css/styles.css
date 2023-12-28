@@ -7,7 +7,9 @@
   --primary-color: #0d1111;
   --secondary-color: #767e7e;
   --accent-color-1: #2f3a3b;
-  --acent-color-2: #1ebfc1;
+  --accent-color-2: #1ebfc1;
+  --accent-color-3: #9da6a5;
+  --accent-color-4: #fff;
 }
 
 html {
@@ -17,6 +19,7 @@ html {
 body {
   height: 10000px;
   font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -29,19 +32,33 @@ a {
 }
 
 .btn {
-  min-width: 108px;
+  padding: 20px 41px;
+  border-radius: 14px;
+  color: var(--accent-color-4);
+  font-size: 1.8rem;
   font-weight: 600;
-  border: 1px solid var(--acent-color-2);
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.heading {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.heading.lv1 {
+  font-size: 6.2rem;
+  line-height: 1.16;
 }
 
 /* Header */
 .header {
-  padding-top: 64px;
+  padding: 64px 0 24px;
+  background: #fefefd;
 }
 
 .header.fixed {
   position: sticky;
-  top: -30px;
+  top: -40px;
 }
 
 .header .body {
@@ -71,7 +88,9 @@ a {
   margin-left: 24px;
   padding: 12px 23px;
   font-size: 1.6rem;
-  color: var(--acent-color-2);
+  font-weight: 600;
+  color: var(--accent-color-2);
+  border: 1px solid var(--accent-color-2);
   border-radius: 6px;
 }
 
@@ -79,4 +98,111 @@ a {
   color: #494949;
   font-size: 1.6rem;
   font-weight: 400;
+}
+
+/* Hero */
+.hero {
+  margin-top: 26px;
+}
+
+.hero .body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero .content-block {
+  width: 45%;
+}
+
+.hero .content-block .title {
+  color: #767e7e;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.hero .content-block .heading {
+  margin-top: 18px;
+  max-width: 458px;
+}
+
+.hero .content-block .desc {
+  max-width: 374px;
+  color: var(--accent-color-3);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.77;
+}
+
+.hero .content-block .cta-group {
+  display: flex;
+  margin-top: 52px;
+  gap: 50px;
+}
+
+.hero .content-block .get-started-btn {
+  background: var(--accent-color-2);
+}
+
+.hero .content-block .play-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  border: transparent;
+  box-shadow: 0px 22px 50px 0px rgba(0, 0, 0, 0.05);
+  background: #fff;
+  cursor: pointer;
+}
+
+.hero .banner-block {
+  position: relative;
+  padding-left: 65px;
+}
+
+.hero .banner-block .title {
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.hero .banner-block img {
+  width: 576px;
+  height: 631px;
+  object-fit: cover;
+}
+
+.hero .banner-block .courses-card {
+  position: absolute;
+  top: 149px;
+  left: 25px;
+  padding: 17px 25px 18px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  width: 157px;
+  border-radius: 18px;
+  background: #fefefd;
+  box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .banner-block .book-block {
+  position: relative;
+}
+
+.hero .banner-block .book-img {
+  width: 36px;
+  height: 40px;
+}
+
+.hero .banner-block .horizontal-line-img {
+  position: absolute;
+  top: 28px;
+  left: 4px;
+  right: 4px;
+  width: 28px;
+  height: 4px;
+  color: #f4dada;
 }
