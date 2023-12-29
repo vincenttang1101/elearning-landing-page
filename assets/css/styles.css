@@ -246,3 +246,39 @@ a {
   width: 26px;
   height: 6px;
 }
+
+.hero .banner-block .active-students-card {
+  position: absolute;
+  right: 45px;
+  bottom: 41px;
+  padding: 17px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 207px;
+  border-radius: 24px;
+  background: #fefefd;
+  box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .banner-block .avatar-group {
+  margin-top: 8px;
+  display: flex;
+}
+
+.hero .banner-block .avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+  color: var(--accent-color-4);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 33px;
+  background: var(--avatar-bg-color, --accent-color-4);
+}
+
+.hero .banner-block .avatar:not(:first-child) {
+  margin-left: -7px;
+}
