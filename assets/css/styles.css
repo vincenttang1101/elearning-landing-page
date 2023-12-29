@@ -59,6 +59,7 @@ a {
 .header.fixed {
   position: sticky;
   top: -40px;
+  z-index: 1;
 }
 
 .header .body {
@@ -205,4 +206,43 @@ a {
   width: 28px;
   height: 4px;
   color: #f4dada;
+}
+
+.hero .banner-block .schedules-card {
+  position: absolute;
+  left: 0;
+  bottom: 46px;
+  padding: 16px 25px 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 124px;
+  border-radius: 24px;
+  background: var(--accent-color-4);
+  box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .banner-block .horizontal-line-schedules-1,
+.hero .banner-block .horizontal-line-schedules-2,
+.hero .banner-block .horizontal-line-schedules-3 {
+  width: 74px;
+  height: 6px;
+}
+
+.hero .banner-block .horizontal-line-schedules-1 {
+  margin-top: 16px;
+}
+
+.hero .banner-block .horizontal-line-schedules-2 {
+  margin-top: 12px;
+}
+
+.hero .banner-block .horizontal-line-schedules-3 {
+  margin-top: 10px;
+}
+
+.hero .banner-block .horizontal-line-schedules-4 {
+  margin-top: 16px;
+  width: 26px;
+  height: 6px;
 }
