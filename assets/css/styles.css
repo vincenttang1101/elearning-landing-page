@@ -347,3 +347,135 @@ a {
   font-weight: 400;
   line-height: 1.68;
 }
+
+/* Popular Courses */
+.popular-courses {
+  margin-top: 130px;
+}
+
+.popular-courses .row-top .intro-title {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.083em;
+}
+
+.popular-courses .row-top .heading.lv2 {
+  margin-top: 18px;
+}
+
+.popular-courses .row-top .info {
+  margin-top: 19px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-courses .row-top .desc {
+  max-width: 525px;
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.77;
+}
+
+.popular-courses .row-top .view-all-courses-btn {
+  color: var(--accent-color-2);
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration-line: underline;
+}
+
+.popular-courses .course-list {
+  margin-top: 79px;
+  display: flex;
+  gap: 47px;
+}
+
+.popular-courses .course-list .course-item {
+  position: relative;
+  width: 33.33%;
+}
+
+.popular-courses .course-list .course-img-block {
+  position: relative;
+}
+
+.popular-courses .course-list .course-shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 393px;
+  border-radius: 8px;
+  opacity: 0.35;
+  background: #d0efed;
+}
+
+.popular-courses .course-list .course-img {
+  width: 100%;
+  height: 393px;
+  border-radius: 8px;
+}
+
+.popular-courses .course-list .info {
+  position: absolute;
+  top: 322px;
+  left: 17px;
+  right: 17px;
+  width: 325px;
+  padding: 18px 25px 29px;
+  border-radius: 8px;
+  background: var(--accent-color-4);
+  box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+}
+
+.popular-courses .course-list .title {
+  color: var(--primary-color);
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.popular-courses .course-list .price {
+  margin-top: 16px;
+  color: var(--secondary-color);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.popular-courses .course-list .value {
+  color: var(--primary-color);
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.popular-courses .course-list .desc {
+  margin-top: 6px;
+  color: var(--accent-color-3);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.popular-courses .course-list .course-schedule {
+  margin-top: 18px;
+  display: flex;
+  gap: 10px;
+}
+
+.popular-courses .course-list .schedule-info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--accent-color-3);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.popular-courses .course-list .schedule-info::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-color-2);
+}
