@@ -55,6 +55,10 @@ a {
   line-height: 1.33;
 }
 
+.heading.lv3 {
+  font-size: 6.2rem;
+}
+
 /* Header */
 .header {
   padding: 64px 0 24px;
@@ -478,4 +482,26 @@ a {
   height: 6px;
   border-radius: 50%;
   background: var(--accent-color-2);
+}
+
+/* Stats */
+.stats {
+  margin-top: 265px;
+}
+
+.stats .body {
+  display: flex;
+  justify-content: space-around;
+}
+
+.stats .heading.lv3 {
+  text-align: center;
+}
+
+.stats .title {
+  margin-top: 24px;
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+  font-weight: 400;
 }
