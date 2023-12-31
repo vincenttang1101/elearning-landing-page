@@ -19,8 +19,13 @@ const getActivedIndexFeedback = () => {
 backBtn.addEventListener("click", () => {
   if (getActivedIndexFeedback() > 0) {
     activedIndex = getActivedIndexFeedback() - 1;
-
     setActivedIndexFeedback(activedIndex);
+
+    if (activedIndex === INITIAL_ACTIVED_INDEX) {
+      backBtn.classList.add("disabled");
+    }
+    nextBtn.classList.remove("disabled");
+
     feedbackItems.forEach((feedback) => {
       feedback.style.cssText = `
                 transform: translateX(calc(${activedIndex} * -100%));
@@ -34,6 +39,11 @@ nextBtn.addEventListener("click", () => {
   if (getActivedIndexFeedback() < feedbackItems.length - 1) {
     activedIndex = getActivedIndexFeedback() + 1;
     setActivedIndexFeedback(activedIndex);
+
+    if (activedIndex === feedbackItems.length - 1) {
+      nextBtn.classList.add("disabled");
+    }
+    backBtn.classList.remove("disabled");
 
     feedbackItems.forEach((feedback) => {
       feedback.style.cssText = `

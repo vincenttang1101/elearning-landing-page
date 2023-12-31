@@ -620,8 +620,17 @@ a {
   cursor: pointer;
 }
 
+.feedback .control-btn.disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
 .feedback .control-btn:hover {
   opacity: 0.9;
+}
+
+.feedback .control-btn.disabled:hover {
+  opacity: 0.6;
 }
 
 .feedback .img-group {
