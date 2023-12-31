@@ -542,9 +542,20 @@ a {
   margin-top: 264px;
 }
 
-.feedback .body {
+.feedback .main-content {
+  position: relative;
+}
+
+.feedback .feedback-list {
   display: flex;
+  overflow: hidden;
+}
+
+.feedback .feedback-item {
+  display: flex;
+  flex-shrink: 0;
   justify-content: space-between;
+  width: 100%;
   height: 481px;
 }
 
@@ -590,14 +601,17 @@ a {
   font-weight: 500;
 }
 
-.feedback .info .control-btn-group {
+.feedback .cta-group {
+  position: absolute;
+  bottom: 37px;
+  left: 0;
   margin-top: 52px;
   display: flex;
   gap: 30px;
 }
 
-.feedback .info .control-btn {
-  padding: 20px;
+.feedback .control-btn {
+  padding: 18px 20px;
   display: flex;
   align-items: center;
   border: 1px solid var(--accent-color-2);
@@ -606,7 +620,7 @@ a {
   cursor: pointer;
 }
 
-.feedback .info .control-btn:hover {
+.feedback .control-btn:hover {
   opacity: 0.9;
 }
 
