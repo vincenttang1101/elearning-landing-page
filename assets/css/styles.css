@@ -566,7 +566,7 @@ a {
 }
 
 .feedback .info .control-btn {
-  padding: 23px;
+  padding: 20px;
   display: flex;
   align-items: center;
   color: var(--accent-color-4);
@@ -634,4 +634,33 @@ a {
   right: 171px;
   width: 235px;
   height: 235px;
+}
+
+/* Career Portal */
+.career-portal {
+  margin-top: 130px;
+  padding: 76px 0 88px;
+  background: #def6f5;
+}
+
+.career-portal .body {
+  display: flex;
+  align-items: center;
+  gap: 410px;
+}
+
+.career-portal .info .desc {
+  margin-top: 18px;
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.career-portal .btn-block .get-started-btn {
+  padding: 20px 41px;
+  color: var(--accent-color-4);
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-radius: 14px;
+  background: #2ac9bf;
 }
