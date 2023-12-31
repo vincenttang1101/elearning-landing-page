@@ -21,6 +21,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
@@ -89,6 +94,10 @@ a {
   text-decoration: none;
 }
 
+.header .list a:hover {
+  color: var(--accent-color-2);
+}
+
 .header .list a.active {
   font-weight: 600;
 }
@@ -103,10 +112,19 @@ a {
   border-radius: 6px;
 }
 
-.header .cta-group a:first-child {
+.header .cta-group .sign-in-btn {
   color: #494949;
   font-size: 1.6rem;
   font-weight: 400;
+}
+
+.header .cta-group .sign-in-btn:hover {
+  color: var(--accent-color-2);
+}
+
+.header .cta-group .sign-up-btn:hover {
+  color: var(--accent-color-4);
+  background: var(--accent-color-2);
 }
 
 /* Hero */
@@ -153,6 +171,11 @@ a {
   background: var(--accent-color-2);
 }
 
+.hero .content-block .get-started-btn:hover {
+  opacity: 0.9;
+  box-shadow: 0px 10px 15px -11px rgba(0, 0, 0, 0.1);
+}
+
 .hero .content-block .play-btn {
   display: flex;
   align-items: center;
@@ -164,6 +187,10 @@ a {
   box-shadow: 0px 22px 50px 0px rgba(0, 0, 0, 0.05);
   background: #fff;
   cursor: pointer;
+}
+
+.hero .content-block .play-btn:hover {
+  box-shadow: 0px 10px 15px -11px rgba(0, 0, 0, 0.1);
 }
 
 .hero .banner-block {
@@ -413,6 +440,11 @@ a {
   border-radius: 8px;
   opacity: 0.35;
   background: #d0efed;
+  cursor: pointer;
+}
+
+.popular-courses .course-list .course-shape:hover {
+  display: none;
 }
 
 .popular-courses .course-list .course-img {
@@ -433,7 +465,7 @@ a {
   box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
 }
 
-.popular-courses .course-list .title {
+.popular-courses .course-list .title a {
   color: var(--primary-color);
   font-size: 2.2rem;
   font-weight: 700;
@@ -568,12 +600,14 @@ a {
   padding: 20px;
   display: flex;
   align-items: center;
-  color: var(--accent-color-4);
-  font-weight: bold;
-  border: none;
+  border: 1px solid var(--accent-color-2);
   border-radius: 50%;
   background: #2ac9bf;
   cursor: pointer;
+}
+
+.feedback .info .control-btn:hover {
+  opacity: 0.9;
 }
 
 .feedback .img-group {
@@ -660,8 +694,14 @@ a {
   color: var(--accent-color-4);
   font-size: 1.8rem;
   font-weight: 600;
+  border: 1px solid var(--accent-color-2);
   border-radius: 14px;
   background: #2ac9bf;
+}
+
+.career-portal .btn-block .get-started-btn:hover {
+  opacity: 0.9;
+  box-shadow: 0px 10px 15px -11px rgba(0, 0, 0, 0.1);
 }
 
 .footer {
@@ -680,11 +720,15 @@ a {
   font-weight: 500;
 }
 
-.footer .row-top .item:not(:first-child) {
+.footer .row-top .item:not(:first-child) a {
   margin-top: 18px;
   color: #535353;
   font-size: 1.6rem;
   font-weight: 400;
+}
+
+.footer .row-top .item:not(:first-child) a:hover {
+  color: var(--accent-color-2);
 }
 
 .footer .row-top .list:last-child .item:not(:first-child) {
